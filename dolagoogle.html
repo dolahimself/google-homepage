@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body {
+				background-color: rgba(255, 255, 255, 1);
+				display: flex;
+				flex-direction: column;
+			}
+
+			header {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				height: 8vh;
+			}
+
+			.top-menu {
+				list-style-type: none;
+			}
+
+			.top-menu li {
+				float: left;
+			}
+
+			.top-menu li > a {
+				padding: 6px;
+				margin: 5px;
+				text-decoration: none;
+			}
+
+			.top-menu img {
+				height: 32px; 
+			}
+
+			div {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				height: 77.5vh;
+			}
+
+			.icon {
+				margin-top: 80px;
+				margin-bottom: 20px;
+				margin-left: 154px;
+			}
+
+			.searchbox input {
+				width: 43vw;
+				height: 40px;
+				border: 1px solid rgba(179, 179, 179, 0.8);
+				border-radius: 20px;
+				background-color: rgba(254, 254, 254, 1);
+				margin-bottom: 35px;
+			}
+
+			.searchbox input:hover {
+				border: 1px solid rgba(149, 149, 149, 1);
+				background-color: rgba(254, 254, 254, 1);
+			}
+
+			.suggestion button {
+				width: 8vw;
+				height: 34px;
+				border: 1px solid rgba(255, 255, 255, 0);
+				background-color: rgba(179, 179, 179, 0.1);
+				border-radius: 5px;
+				margin-left: 82px;
+				margin-bottom: 30px;
+			}
+
+			.suggestion button:hover {
+				background-color: rgba(179, 179, 179, 0.2);
+				border: 1px solid rgba(255, 255, 255, 0.9);
+
+			}
+
+			.suggestion button > a {
+				text-decoration: none;
+				color: rgba(100, 100, 100, 1);
+			}
+
+			.mid-menu {
+				list-style-type: none;
+			}
+
+			.mid-menu li {
+				justify-content: center;
+			}
+
+			.mid-menu li > a {
+				padding: 10px;
+				margin: 5px;
+			}
+
+			.mid-menu ul > li {
+				display: inline;
+				padding: 10px
+			}
+
+			.lang > p, a {
+				flex-direction: column;	
+				text-decoration: none;			
+			}
+
+			div .land > li {
+				padding: 1px;
+			}
+
+			footer {
+				display: flex;
+				flex-direction: row;
+				background-color: rgba(219,219, 219, 0.4);
+				height: 12vh;
+			}
+
+			footer > ul {
+				list-style-type: none;
+			}
+
+			footer li > a {
+				text-decoration: none;
+				color: rgba(159,159, 159, 0.8);
+			}
+
+			footer li {
+				text-decoration: none;
+				color: rgba(159,159, 159, 0.8);
+			}
+
+			.left li {
+				float: left;
+				display: inline;
+				margin-right: 70px;				
+			}
+
+			.right li {
+				float: right;
+				display: inline;
+				margin-left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul class="top-menu">
+			<li><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>	
+			<li><a href="https://www.google.com.ng/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+			<li><a href="https://www.google.com.ng/intl/en/about/products?tab=wh"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfteVPOqDOl3w70HWy6yfeCzCgjtWJRnwGPA&usqp=CAU" alt="google apps icon" /></a></li>
+			<li><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu9-ujJWA24EKwzcA2ewRN8ObqNqKqdPjs8Iz1l9=s32-c-mo" alt="user display icon" /></a></li>
+			</ul>
+		</header>
+		<div>
+			<ul class="mid-menu">
+				<li class="icon"><a href="https://www.google.com/"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google homepage icon" /></a></li>
+				<li class="searchbox"><input type="search" name="searchbox" id="searchbox" placeholder="" /></li>
+				<ul class="suggestion">
+					<li><button><a href="https://www.google.com/">Google Search</a></button></li>
+					<li><button><a href="https://www.google.com/doodles/">I'm feeling lucky</a></button></li>
+				</ul>
+				<ul class="lang">
+					<li>Google offered in:</li>
+					<li><a href="https://www.google.com/setprefs?sig=0_5JJlaeYZT4uMVMnCP5yuvLAG6ik%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwj9-oj3tI7tAhURyoUKHT2yCg8Q2ZgBCA8">hausa</a></li>
+					<li><a href="https://www.google.com/setprefs?sig=0_5JJlaeYZT4uMVMnCP5yuvLAG6ik%3D&hl=ig&source=homepage&sa=X&ved=0ahUKEwj9-oj3tI7tAhURyoUKHT2yCg8Q2ZgBCBA">Igbo</a></li>
+					<li><a href="https://www.google.com/setprefs?sig=0_5JJlaeYZT4uMVMnCP5yuvLAG6ik%3D&hl=yo&source=homepage&sa=X&ved=0ahUKEwj9-oj3tI7tAhURyoUKHT2yCg8Q2ZgBCBE">Ede Yoruba</a></li>
+					<li><a href="https://www.google.com/setprefs?sig=0_5JJlaeYZT4uMVMnCP5yuvLAG6ik%3D&hl=pcm&source=homepage&sa=X&ved=0ahUKEwj9-oj3tI7tAhURyoUKHT2yCg8Q2ZgBCBI">Nigerian Pidgin</a></li>
+				</ul>
+			</ul>
+		</div>
+		<footer>
+			<ul class="left">
+				<li>Nigeria</li>	
+				<li><a href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>	
+				<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+				<li><a href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+				<li><a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href="https://policies.google.com/privacy?hl=en-NG&fg=1">Setting</a></li>
+				<li><a href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a></li>
+				<li><a href="https://www.google.com/preferences?hl=en">Privacy</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
